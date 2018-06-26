@@ -1,7 +1,8 @@
-% demo1_gpTCinference_1D.m
+% demo2_gpTC_1Dminvar.m
 %
-% Test script illustrating posterior inference for a non-parametric 1D
-% tuning curve parametrized by a transformed GP prior and Poisson spiking 
+% Demo script illustrating active learning for a non-parametric 1D
+% tuning curve parametrized by a transformed GP prior and Poisson spiking,
+% with stimulus selected to minimize posterior variance of the TC.
 
 setpaths; % set paths to include needed subdirectory
 

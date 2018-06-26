@@ -7,6 +7,9 @@ if ~exist('expfun','file')   % check if 'expfun.m' is in path
 end
 
 if ~exist('runMAPinference_GPtf','file')   % check if 'expfun.m' is in path
-    addpath code_inferGPtuningcurves
+    addpath code_gaussianprocessTCs
 end
 
+if ~exist('logliPoissonTCbd','file')   % check if 'expfun.m' is in path
+    addpath code_parametricTCs
+end

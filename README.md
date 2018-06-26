@@ -6,8 +6,8 @@ closed-loop experiments in Matlab.
  maximize some notion of utility (e.g., information gain or minimal posterior
  variance), for Poisson neurons with tuning curves
  modeled as:
- 1. a nonlinearly transformed Gaussian process (*demo1* and *demo2*).
- 2. a parametric function (to appear).
+ 1. a parametric function (*demo1*). 
+ 2. a nonlinearly transformed Gaussian process (*demo2* and *demo3*).
 
 **Relevant publications:**
 
@@ -31,7 +31,8 @@ Usage
  (e.g. `cd code/activelearningTCs/`).
 
 * Examine the demo scripts for annotated example analyses of simulated
-datasets: 
-	*  `demo1_gpTCinference_1D.m` - demo for learning non-parametric 1D tuning curve under transformed GP prior
-	*  `demo2_gpTCinference_2D.m` - demo for learning non-parametric 2D  tuning curve under transformed GP prior
+datasets:
+	*  `demo1_parametricTC_1Dinfomax` - demo for parametric 1D tuning curve with infomax stim selection
+	*  `demo2_gpTC_1Dminvar.m` - demo for non-parametric 1D tuning curve under transformed GP prior
+	*  `demo3_gpTC_2Dminvar.m` - demo for  non-parametric 2D  tuning curve under transformed GP prior
 

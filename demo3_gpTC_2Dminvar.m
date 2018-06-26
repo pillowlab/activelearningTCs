@@ -1,7 +1,8 @@
 % demo2_gpTCinference_2D.m
 %
-% Test script illustrating posterior inference for a nonparametric 2D
-% tuning curve parametrized by a transformed GP prior and Poisson spiking 
+% Demo script illustrating active learning for a non-parametric 2D
+% tuning curve parametrized by a transformed GP prior and Poisson spiking,
+% with stimulus selected to minimize posterior variance of the TC.
 
 % Set parameters for true FR map by sampling from GP
 nx1 = 40; % # grid points in first dimension of input space
