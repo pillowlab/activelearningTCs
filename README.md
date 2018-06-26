@@ -3,8 +3,8 @@ Adaptive stimulus selection (aka "active learning") for 1D and 2D tuning curves 
 closed-loop experiments in Matlab.
 
 **Description:** Adaptively selects stimuli from a 1D or 2D grid that
- maximize some notion of utility (e.g., information gain or posterior
- vaiance minimization), for Poisson neurons with tuning curves
+ maximize some notion of utility (e.g., information gain or minimal posterior
+ variance), for Poisson neurons with tuning curves
  modeled as:
  1. a nonlinearly transformed Gaussian process (*demo1* and *demo2*).
  2. a parametric function (to appear).
@@ -12,11 +12,11 @@ closed-loop experiments in Matlab.
 **Relevant publications:**
 
 *  Pillow & Park (2016). **Adaptive Bayesian methods for closed-loop
-   neurophysiology**. [link](http://pillowlab.princeton.edu/pubs/abs_Pillow16_ActiveLearningChap.html)
+   neurophysiology**. [[link]](http://pillowlab.princeton.edu/pubs/abs_Pillow16_ActiveLearningChap.html)
 
 *  Park, Weller, Horwitz, & Pillow (2014).  **Bayesian active learning
    of neural firing rate maps with transformed Gaussian process
-   priors. Neural Computation**, *Neural Computation* 2014 [link](http://pillowlab.princeton.edu/pubs/abs_ParkM_GPactivelearning_NC14.html)
+   priors. Neural Computation**, *Neural Computation* 2014 [[link]](http://pillowlab.princeton.edu/pubs/abs_ParkM_GPactivelearning_NC14.html)
 
 Download
 ==========
@@ -32,8 +32,8 @@ Usage
 
 * Examine the demo scripts for annotated example analyses of simulated
 datasets: 
-	*  `demo1_TCinference_1D.m` - adaptive stimulus selection for 1D
-    tuning curve
-	*  `demo2_TCinference_2D.m` - adaptive stimulus selection for 2D
-    tuning curve
+	*  `demo1_TCinference_1D.m` - adaptive stimulus selection for
+    non-parametric 1D tuning curve under transformed GP prior
+	*  `demo2_TCinference_2D.m` - adaptive stimulus selection for
+    non-parametric 2D  tuning curve under transformed GP prior
 
