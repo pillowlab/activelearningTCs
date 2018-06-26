@@ -22,7 +22,7 @@ Download
 ==========
 
 * **Download**:   zipped archive  [activelearningTCs-master.zip](https://github.com/pillowlab/activelearningTCs/archive/master.zip)
-* **Clone**: clone the repository from github: ```git clone git@github.com:pillowlab/activelearningTCs.git```
+* **Clone**: clone the repository from github: ```git clone https://github.com/pillowlab/activelearningTCs.git```
 
 Usage
 =====
