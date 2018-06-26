@@ -1,7 +1,7 @@
-% demo2_TCinference_2D.m
+% demo2_gpTCinference_2D.m
 %
-% Test script illustrating posterior inference for a 2D tuning curve under
-% GP prior and Poisson spiking 
+% Test script illustrating posterior inference for a nonparametric 2D
+% tuning curve parametrized by a transformed GP prior and Poisson spiking 
 
 % Set parameters for true FR map by sampling from GP
 nx1 = 40; % # grid points in first dimension of input space
@@ -48,7 +48,7 @@ theta.mu = mu; % mean
 theta.rho = rho; % marginal variance
 theta.d = d; % length scale
 
-% Set nonlinearity 'g'
+% Set nonlinearity 'g' for transforming GP to positive firing rates
 gfun = @expfun;  % exponential
 %gfun = @logexp1;  % soft-rectification
 

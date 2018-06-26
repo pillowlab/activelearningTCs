@@ -1,7 +1,7 @@
-% demo1_TCinference_1D.m
+% demo1_gpTCinference_1D.m
 %
-% Test script illustrating posterior inference for a 1D tuning curve under
-% GP prior and Poisson spiking 
+% Test script illustrating posterior inference for a non-parametric 1D
+% tuning curve parametrized by a transformed GP prior and Poisson spiking 
 
 setpaths; % set paths to include needed subdirectory
 
@@ -49,7 +49,7 @@ theta.mu = mu; % mean
 theta.rho = rho; % marginal variance
 theta.d = d; % length scale
 
-% Set nonlinearity 'g'
+% Set nonlinearity 'g' for transforming GP to positive firing rates
 %gfun = @expfun;  % exponential
 gfun = @logexp1;  % soft-rectification
 
@@ -109,9 +109,9 @@ for jj = 1:Ntrials
     box off; hold off; axis tight;
     title(sprintf('f_{map}(x) after %d trials', length(dat.r)));
     ylabel('sp/s'); xlabel('x');
-    subplot(222); % --- phi (log-transformed tuning curve) covariance ------
+    subplot(222); % --- phi (pre-transformed tuning curve) covariance ------
     imagesc(phicov);
-    title('posterior cov of log-TC \phi(x)');
+    title('posterior cov of pre-transformed TC \phi(x)');
     subplot(224); % --- phi mean  ----
     plot(1:nx,phimu,'linewidth', lw);
     title('log-TC \phi(x)');
