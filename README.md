@@ -32,6 +32,6 @@ Usage
 
 * Examine the demo scripts for annotated example analyses of simulated
 datasets: 
-	*  `demo1_TCinference_1D.m` - demo for learning non-parametric 1D tuning curve under transformed GP prior
-	*  `demo2_TCinference_2D.m` - demo for learning non-parametric 2D  tuning curve under transformed GP prior
+	*  `demo1_gpTCinference_1D.m` - demo for learning non-parametric 1D tuning curve under transformed GP prior
+	*  `demo2_gpTCinference_2D.m` - demo for learning non-parametric 2D  tuning curve under transformed GP prior
 
