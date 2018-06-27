@@ -1,9 +1,8 @@
-% demo2_gpTC_1Dminvar.m
+% demo2_gpTC_1D.m
 %
 % Demo script illustrating active learning for a non-parametric 1D
 % tuning curve parametrized by a transformed Gaussian Process (GP) prior
-% and Poisson spiking, with stimulus selected to minimize posterior
-% variance of the TC
+% and Poisson spiking, with stimulus selected by uncertainty sampling
 
 setpaths; % set paths to include needed subdirectory
 
